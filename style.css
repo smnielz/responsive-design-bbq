@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.125rem;
+    text-align: center;
+}
+
+header{
+    background-image: url(images/dark-ribs.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 1em 1em 1em;
+}
+
+header h1{
+    font-size: 3.5rem;
+    color: #fff;
+    font-weight: normal;
+}
+
+header h2{
+    font-size: 1.75rem;
+}
+
+header h3{
+    font-size: .625rem;
+    margin: 0;
+    display: inline-block;
+    border-width: 5px;
+    border-style: solid;
+    border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+header h2,
+header h3,
+main h2{
+    color: #f18119;
+    text-transform: uppercase;
+}
+
+main{
+    padding: 1em;
+}
+
+main h1,
+main h2{
+    margin-bottom: 0;
+}
+
+main h2{
+    margin-top: 0;
+}
+
+main p{
+    line-height: 1.5;
+}
+
+main input{
+    border-radius: 10px;
+    text-align: center;
+    border-width: .5px;
+    padding: .7em;
+}
+
+main button{
+    background: #f18119;
+    background-image: linear-gradient(to left, #ff713b, #ffa51d);
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    padding: .7em;
+}
+
+main button:hover,
+main button:focus{
+	background:#404040;
+}
+
+form{
+    width: 300px;
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+}
+
+.small{
+    font-size: .625rem;
+    display: inline-block;
+    width: 150px;
+}
+
+@media (min-width:600px){
+    .container{
+        display: flex;
+        min-height: 100vh;
+    }
+    
+    .big-screen{
+        max-width: 60%;
+    }
+    
+    header{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    header h3{
+        position: absolute;
+        top: 0;
+    }
+    
+    main{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+	
+	form{
+		height:150px;
+	}
+}
