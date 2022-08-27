@@ -26,12 +26,8 @@ header h3{
     font-size: .625rem;
     margin: 0;
     display: inline-block;
-    border-width: 5px;
-    border-style: solid;
-    border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
+	border-top: 5px solid #F18119;    
+	border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
 }
 
 header h2,
@@ -63,6 +59,9 @@ main input{
     text-align: center;
     border-width: .5px;
     padding: .7em;
+	font-family: inherit;	
+	transform: scale(1);
+	transition: transform .25s;
 }
 
 main button{
@@ -72,11 +71,18 @@ main button{
     border: none;
     color: #fff;
     padding: .7em;
+	text-transform: uppercase;
+	font-family:inherit;
+	font-weight: bold;
+	transform: scale(1);
+	transition: transform .25s;
 }
 
 main button:hover,
-main button:focus{
-	background:#404040;
+main button:focus,
+main input:hover,
+main input:focus{
+	transform: scale(1.1);
 }
 
 form{
